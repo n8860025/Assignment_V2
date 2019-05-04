@@ -1,0 +1,51 @@
+body {
+  font-family: Helvetica, Arial, Arial, sans-serif;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.HeaderBanner {
+  margin: 15px auto;
+  border-bottom: 1px solid #d9dadc;
+  width: 100%;
+}
+
+hr {
+  border-top: 1px solid #d9dadc;
+  width: 450px;
+  margin: 10px auto 10px auto;
+}
+
+.button {
+  /*background-color: rgb(11, 46, 76);*/
+  background-color: rgb(0, 83, 117);
+  font-size: 16px;
+  padding: 6px 0px;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: rgb(11, 46, 76);
+  transition-duration: 0.2s;
+}
+
+.button:disabled {
+  cursor: default;
+  background-color: rgb(223, 240, 216);
+  color: rgb(60, 118, 61);
+  border-color: solid rgb(214, 233, 198);
+}
+
+.logout {
+  width: 50%;
+  margin: 0 auto 10px auto;
+}

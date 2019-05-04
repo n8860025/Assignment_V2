@@ -1,0 +1,104 @@
+/*
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.login {
+  margin: auto;
+  flex:1;
+  width:100%;
+}
+.login__input {
+  width:100%;
+}
+*/
+
+.login {
+  flex: 100%;
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.login__input {
+  margin: auto;
+  margin-bottom: 10px;
+  flex: 0 1 100%;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  color: white;
+  flex: 3;
+  margin: auto;
+}
+
+.remember_me {
+  flex: 2;
+}
+
+.submit {
+  /*background-color: rgb(11, 46, 76);*/
+  background-color: rgb(0, 83, 117);
+  font-size: 16px;
+  padding: 6px 0px;
+  border-radius: 2px;
+}
+
+.submit:hover {
+  background-color: rgb(11, 46, 76);
+  transition-duration: 0.2s;
+}
+
+.submit:disabled {
+  cursor: default;
+  background-color: rgb(223, 240, 216);
+  color: rgb(60, 118, 61);
+  border-color: solid rgb(214, 233, 198);
+}
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid rgb(0, 83, 117);
+  width: 30px;
+  height: 30px;
+  animation: spin 0.4s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  margin: auto;
+  border: 2px;
+  border-color: solid #ebccd1;
+  border-radius: 2px;
+  background-color: #f2dede;
+  width: 95%;
+  color: #a94442;
+  padding: 5px;
+}
+
+.logged_in {
+  margin: auto;
+  background-color: rgb(223, 240, 216);
+  color: rgb(60, 118, 61);
+  border-color: solid rgb(214, 233, 198);
+}
